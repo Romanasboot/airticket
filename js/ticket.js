@@ -1,5 +1,5 @@
 
-
+document.querySelector('#btnPrint').style.display='none';
 
 let flightNo = ["FR2144","FR3466","FR2971"];
 let cities = ["Vilnius", "Kaunas", "Palanga", "London (Lutonas) LTN", "London (Stanstedas)", "Dublin DUB"];
@@ -28,7 +28,6 @@ let destinations2 = document.querySelector('#cityTo');
             destinations2.appendChild(option2);
         };
 
-
 let prices = document.querySelector('#Price');
 for (let i = 0; i < price.length; i++) {
     let option = document.createElement('option');
@@ -46,29 +45,3 @@ for (let i = 0; i < luggage.length; i++) {
 };
 
 
-/*
-let imgList = JSON.parse(imx.responseText);
-                console.log(imgList)
-                let newImages = document.querySelector('ul');
-                for (let i= 0; i < imgList.length; i++) {
-                    let imageLi = document.createElement('li');
-                    let image = document.createElement('img')
-                    image.src = ('http://web-training.lt/img_api/img/' + imgList[i]);
-                    imageLi.appendChild(image);
-                    newImages.appendChild(imageLi);
-                    }
-
-
-                    let optionList = document.querySelector('.city');
-                    let optionList2 = document.querySelector('.cityTo');
-                    for (let index = 0; index < places.records.length; index++) {
-                           let option = document.createElement('option');
-                           option.value = places.records[index].fields.name;
-                           option.innerText = places.records[index].fields.name;
-                           optionList.appendChild(option);
-                           let option2 = document.createElement('option');
-                           option2.value = places.records[index].fields.name;
-                           option2.innerText = places.records[index].fields.name;
-                           optionList2.appendChild(option2);                    
-
-                           */
